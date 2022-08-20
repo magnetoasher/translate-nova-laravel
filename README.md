@@ -1,8 +1,5 @@
 # Nova Translatable
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/outl1ne/nova-translatable.svg?style=flat-square)](https://packagist.org/packages/outl1ne/nova-translatable)
-[![Total Downloads](https://img.shields.io/packagist/dt/outl1ne/nova-translatable.svg?style=flat-square)](https://packagist.org/packages/outl1ne/nova-translatable)
-
 This [Laravel Nova](https://nova.laravel.com) allows you to make any input field `spatie/laravel-translatable` compatible and localisable.
 
 ## Requirements
@@ -24,20 +21,13 @@ This [Laravel Nova](https://nova.laravel.com) allows you to make any input field
 
 - `Image` and `File`
   - Workarounds:
-    - [outl1ne/nova-media-hub](https://github.com/outl1ne/nova-media-hub)
-    - or any library that uploads images/files using XHR
+    - any library that uploads images/files using XHR
 
 ## Limitations
 
 - The following methods can not be used, as this package uses them internally:
   - `resolveUsing`
   - `fillUsing`
-
-## Screenshots
-
-![Detail View](./docs/detail.png)
-![Form View](./docs/form.png)
-![Form View w/ Validation Errors](./docs/validation.png)
 
 ## Installation
 
@@ -46,11 +36,11 @@ Firstly, set up [spatie/laravel-translatable](https://github.com/spatie/laravel-
 Install the package in a Laravel Nova project via Composer:
 
 ```bash
-# Install nova-translatable
-composer require outl1ne/nova-translatable
+# Install translate-nova
+composer require outl1ne/translate-nova
 
 # Publish configuration (optional, but useful for setting default locales)
-php artisan vendor:publish --tag="nova-translatable-config"
+php artisan vendor:publish --tag="translate-nova-config"
 ```
 
 ## Usage
@@ -122,7 +112,7 @@ unique: name.en & name.et
 You can define default locales for all the `translatable` fields in the config file. The config file can be published using:
 
 ```bash
-php artisan vendor:publish --tag="nova-translatable-config"
+php artisan vendor:publish --tag="translate-nova-config"
 ```
 
 ### Fill other locales from config option

@@ -1,5 +1,5 @@
 {
-  "name": "outl1ne/nova-translatable",
+  "name": "translate-nova",
   "description": "A laravel-translatable extension for Laravel Nova.",
   "keywords": [
     "laravel",

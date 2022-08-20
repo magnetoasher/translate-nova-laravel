@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="locales.length > 1"
-    class="nova-translatable-locale-tabs flex select-none"
+    class="translate-nova-locale-tabs flex select-none"
     :class="{ 'px-8': !this.detail }"
   >
     <div class="ml-auto" :class="listClasses" v-if="displayType != 'none'">
@@ -45,7 +45,7 @@ export default {
 </script>
 
 <style lang="scss">
-.nova-translatable-locale-tabs {
+.translate-nova-locale-tabs {
   position: relative;
   z-index: 2;
   padding-top: 0.25rem;

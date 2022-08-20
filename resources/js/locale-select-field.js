@@ -5,5 +5,5 @@ import LocaleSelect from './components/locale-select/LocaleSelect';
 Nova.booting((Vue, router, store) => {
   Vue.component('form-locale-select-field', FormField);
   Vue.component('detail-locale-select-field', DetailField);
-  Vue.component('nova-translatable-locale-select', LocaleSelect);
+  Vue.component('translate-nova-locale-select', LocaleSelect);
 });

@@ -59,15 +59,15 @@ class TranslatableFieldMixin
 
                 $prioritizeNovaLocale = isset($options['prioritizeNovaLocale'])
                     ? $options['prioritizeNovaLocale']
-                    : config('nova-translatable.prioritize_nova_locale', true);
+                    : config('translate-nova.prioritize_nova_locale', true);
 
                 $displayType = isset($options['displayType'])
                     ? $options['displayType']
-                    : config('nova-translatable.display_type', 'row');
+                    : config('translate-nova.display_type', 'row');
 
                 $fillOtherLocalesFrom = isset($options['fillOtherLocalesFrom'])
                     ? $options['fillOtherLocalesFrom']
-                    : config('nova-translatable.fill_other_locales_from', null);
+                    : config('translate-nova.fill_other_locales_from', null);
 
                 $this->withMeta([
                     'translatable' => [

@@ -70,7 +70,7 @@ export default {
     fill(formData) {
       try {
         if (this.isFlexible && this.isFile)
-          return alert('Sorry, nova-translatable File and Image fields inside Flexible currently do not work.');
+          return alert('Sorry, translate-nova File and Image fields inside Flexible currently do not work.');
 
         const data = {};
         const originalAttribute = this.field.translatable.original_attribute;

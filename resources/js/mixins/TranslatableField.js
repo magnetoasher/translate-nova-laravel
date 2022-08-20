@@ -145,7 +145,7 @@ export default {
 
     getAllLocalesEventName(uniqueId = void 0) {
       const id = uniqueId ?? void 0;
-      return id !== void 0 ? `nova-translatable-${id}@setAllLocale` : 'nova-translatable@setAllLocale';
+      return id !== void 0 ? `translate-nova-${id}@setAllLocale` : 'translate-nova@setAllLocale';
     },
   },
 };

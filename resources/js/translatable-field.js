@@ -7,5 +7,5 @@ Nova.booting((Vue, router, store) => {
   Vue.component('index-translatable-field', IndexField);
   Vue.component('form-translatable-field', FormField);
   Vue.component('detail-translatable-field', DetailField);
-  Vue.component('nova-translatable-locale-tabs', LocaleTabs);
+  Vue.component('translate-nova-locale-tabs', LocaleTabs);
 });
